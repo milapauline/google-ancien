@@ -1,0 +1,185 @@
+
+
+#header {
+    display: grid;
+    grid-template-columns: 40px;
+    grid-template-rows: 40px;
+    grid-template-areas: 
+    "gmail image menu connexion";
+
+}
+#header{
+    display:flex;
+    justify-content:flex-end;
+    align-content: space-between;
+}
+
+a, b {
+    text-decoration: none;
+    color:black;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#apropos {
+    grid-area: apropos;
+    justify-self: center;
+    align-self: center;
+}
+
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+    word-spacing: 1em;
+}
+
+#image {
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+    margin-right: 10px;
+    word-spacing: 1em;
+}
+
+#menu {
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+    word-spacing: 1em;
+}
+#Connexion {
+
+    background : #5381e4;
+    padding : 8px;
+    color : white;
+    border: radius 10%;
+    font-weight:bold;
+    word-spacing: 1em;
+}
+
+#main {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". boutons ."
+    ". google-text .";
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    margin-top:30%
+}
+#search {
+    grid-area: search;
+    align-self: center;
+    justify-self: center;
+    height:30px;
+    width: 500px;
+    margin:4px;
+    padding:8px;
+    border:1px solid grey;
+    border-radius: 25px;
+}
+
+#search:focus {
+    box-shadow: 1px 1px 5px grey;
+}
+#search:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+#boutons {
+    display: boutons;
+    grid-area: boutons;
+    justify-self: center;
+    align-self: center;
+}
+#recherche-google {
+    border: none;
+    font-size: 15px;
+    color: #5F6368;
+    margin-right: 25px;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+#jai-de-la-chance {
+    border: none;
+    font-size: 15px;
+    color: #5F6368;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+
+#google-text {
+    grid-area: google-text;
+    justify-self: center;
+}
+#english {
+    color: blue;
+}
+#polski {
+    color: blue;
+}
+
+#footer {
+    position: fixed;
+    bottom: 5;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+  .footer {
+    background:#f2f2f2;
+    font-family:arial;
+    color:#757575;
+    padding:5px;
+    bottom:0;
+    position:fixed;
+    width:100%;
+  }
+
+
+    #footer-left{
+    display:flex;
+    justify-content:flex-start;
+    align-content: space-between;
+    }
+    
+    .footer-left{
+        color:#585858;
+        float:left;
+        padding:10px;
+        margin-left:20px;
+        text-decoration:none;
+        font-size: 13px;
+    
+    }
+    
+#footer-right{
+    
+    display:flex;
+    justify-content:flex-end;
+    align-content: space-between;
+    }
+    .footer-right{
+    
+        color:#585858;
+        float:right;
+        padding:10px;
+        margin-left:20px;
+        text-decoration:none;
+        font-size: 13px;
+    }
+
+
+    
